@@ -215,7 +215,7 @@ class MiniCssExtractPlugin {
             Buffer.isBuffer( /** @type {CssModule} */ (module).sourceMap) &&
             !this.sourceMap.equals( /** @type {CssModule} */ (module).sourceMap)
           ) ||
-          this.sourceMap !== /** @type {CssModule} */ module.sourceMap ||
+          this.sourceMap !== /** @type {CssModule} */ (module).sourceMap ||
           this.assets !== /** @type {CssModule} */ (module).assets ||
           this.assetsInfo !== /** @type {CssModule} */ (module).assetsInfo
         ) {
